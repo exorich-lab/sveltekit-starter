@@ -1,5 +1,5 @@
 {
-	"name": "sveltekit-blank",
+	"name": "sveltekit-starter",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -44,5 +44,10 @@
 		"clsx": "^2.1.1",
 		"tailwind-merge": "^3.6.0",
 		"tw-animate-css": "^1.4.0"
+	},
+	"description": "SvelteKit 2 + Svelte 5 + Tailwind CSS v4 + shadcn-svelte. Стартер с 40 UI-компонентами, тёмной темой и галереей /kit.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/exorich-lab/sveltekit-starter.git"
 	}
 }
