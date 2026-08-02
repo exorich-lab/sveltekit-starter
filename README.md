@@ -13,6 +13,8 @@
 - 🌙 **Тёмная тема** — переключатель «Светлая / Тёмная / Системная» с сохранением выбора и без вспышки при загрузке
 - ⚡ **Svelte 5 runes** — принудительный runes-режим, никакого legacy-синтаксиса
 - 🎨 **Tailwind CSS v4** — без `tailwind.config`, тема на CSS-переменных (oklch)
+- 🔤 **Шрифт Geist** — Geist Sans / Geist Mono через @fontsource, подключён в `@theme`
+- 🚫 **Кастомные страницы ошибок** — красивый `+error.svelte` с веткой для 404
 - 🛠 **Полный тулинг** — TypeScript 6, ESLint, Prettier, svelte-check
 - ✨ **Свои примитивы** — `SectionHeading`, `GlassCard` для красивых секций
 
