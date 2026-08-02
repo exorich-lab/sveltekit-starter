@@ -23,14 +23,14 @@ pnpm dev          # http://localhost:5173
 
 ## Скрипты
 
-| Команда          | Описание                              |
-| ---------------- | ------------------------------------- |
-| `pnpm dev`       | Dev-сервер с HMR                      |
-| `pnpm build`     | Продакшн-сборка                       |
-| `pnpm preview`   | Превью продакшн-сборки                |
-| `pnpm check`     | Проверка типов (svelte-check)         |
-| `pnpm lint`      | Prettier + ESLint                     |
-| `pnpm format`    | Автоформатирование                    |
+| Команда        | Описание                      |
+| -------------- | ----------------------------- |
+| `pnpm dev`     | Dev-сервер с HMR              |
+| `pnpm build`   | Продакшн-сборка               |
+| `pnpm preview` | Превью продакшн-сборки        |
+| `pnpm check`   | Проверка типов (svelte-check) |
+| `pnpm lint`    | Prettier + ESLint             |
+| `pnpm format`  | Автоформатирование            |
 
 ## Добавление компонентов shadcn
 
