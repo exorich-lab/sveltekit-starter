@@ -1,10 +1,10 @@
 <script lang="ts">
 	import ArrowRightIcon from '@lucide/svelte/icons/arrow-right';
-	import ArrowUpRightIcon from '@lucide/svelte/icons/arrow-up-right';
 	import BellIcon from '@lucide/svelte/icons/bell';
 	import CheckIcon from '@lucide/svelte/icons/check';
 	import CopyIcon from '@lucide/svelte/icons/copy';
 	import HeartIcon from '@lucide/svelte/icons/heart';
+	import LayersIcon from '@lucide/svelte/icons/layers';
 	import MailIcon from '@lucide/svelte/icons/mail';
 	import PaletteIcon from '@lucide/svelte/icons/palette';
 	import RocketIcon from '@lucide/svelte/icons/rocket';
@@ -87,19 +87,14 @@
 			UI-компонентов — всё уже настроено и работает.
 		</p>
 		<div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-			<Button size="lg" onclick={copySnippet}>
+			<a href="/kit" class={buttonVariants({ size: 'lg' })}>
+				<LayersIcon class="size-4" />
+				Смотреть UI Kit
+			</a>
+			<Button variant="outline" size="lg" onclick={copySnippet}>
 				<CopyIcon class="size-4" />
 				{copied ? 'Скопировано!' : 'Скопировать команду'}
 			</Button>
-			<a
-				href="https://svelte.dev/docs"
-				target="_blank"
-				rel="noreferrer"
-				class={buttonVariants({ variant: 'outline', size: 'lg' })}
-			>
-				Документация
-				<ArrowUpRightIcon class="size-4" />
-			</a>
 		</div>
 		<p class="mt-6 flex items-center gap-1.5 text-sm text-muted-foreground">
 			<CheckIcon class="size-4 text-primary" />

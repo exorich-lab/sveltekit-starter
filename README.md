@@ -9,7 +9,9 @@
 - ⚡ **SvelteKit 2** — файловая маршрутизация, SSR, адаптеры
 - 🧪 **Svelte 5 runes** — принудительный runes-режим (никакого legacy-синтаксиса)
 - 🎨 **Tailwind CSS v4** — через `@tailwindcss/vite`, без `tailwind.config`
-- 🧩 **shadcn-svelte** — 15+ готовых компонентов в `src/lib/components/ui/` (button, card, badge, input, dialog, dropdown-menu, tabs, switch, tooltip, sonner и др.)
+- 🧩 **shadcn-svelte** — 40 готовых компонентов в `src/lib/components/ui/` (button, card, badge, input, dialog, dropdown-menu, tabs, switch, tooltip, select, sheet, command, table, accordion и др.)
+- 🗂 **UI Kit галерея** — `/kit`: все компоненты с живыми демо, по категориям (кнопки, формы, оверлеи, навигация, данные)
+- ✨ **Свои примитивы** — `SectionHeading`, `GlassCard`, `DemoCard` в `src/lib/components/`
 - 🌙 **Тёмная тема** — переключатель «Светлая / Тёмная / Системная» (mode-watcher, выбор хранится в localStorage, без вспышки при загрузке)
 - 🔔 **Тосты** — svelte-sonner подключён
 - 🛠 **Тулинг** — TypeScript, ESLint, Prettier, svelte-check
@@ -49,11 +51,16 @@ src/
 ├── lib/
 │   ├── components/
 │   │   ├── theme-toggle.svelte   # переключатель темы
-│   │   └── ui/                   # shadcn-компоненты
+│   │   ├── section-heading.svelte # заголовок секции (eyebrow + title + описание)
+│   │   ├── glass-card.svelte     # стеклянная карточка с glow
+│   │   ├── kit/
+│   │   │   └── demo-card.svelte  # карточка превью для галереи
+│   │   └── ui/                   # shadcn-компоненты (40 шт)
 │   └── utils.ts             # cn() + type-хелперы
 └── routes/
     ├── +layout.svelte       # шапка, футер, ModeWatcher, Toaster
-    └── +page.svelte         # демо-страница
+    ├── +page.svelte         # демо-страница
+    └── kit/+page.svelte     # UI Kit галерея
 ```
 
 ## Тёмная тема

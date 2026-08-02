@@ -29,6 +29,7 @@
 			</a>
 			<nav class="hidden items-center gap-1 md:flex">
 				<a href="/" class={buttonVariants({ variant: 'ghost', size: 'sm' })}>Главная</a>
+				<a href="/kit" class={buttonVariants({ variant: 'ghost', size: 'sm' })}>UI Kit</a>
 				<a
 					href="https://svelte.dev/docs"
 					target="_blank"
